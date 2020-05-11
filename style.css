@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #D4EBF2;
+  background-color: #91203C;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -41,7 +41,7 @@ body {
 
 .tabs {
   list-style: none;
-  background-color: #91203C;
+  background-color: #D4EBF2;
 }
 
 .tab-link {

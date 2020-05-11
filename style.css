@@ -27,7 +27,7 @@ body {
         /*-1px  1px 0px #555,*/
          /*0px  1px 0px #555,*/
          /*1px  1px 0px #555;*/
-  color: #555;
+  color: #000000;
   background-image: url('graph.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -55,7 +55,7 @@ body {
 }
 
 .tab-link:hover {
-  background-color: #555;
+  background-color: #000000;
   color: #EDBC41;
 }
 

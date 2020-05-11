@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #91203C;
+  background-color: #D4EBF2;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -19,15 +19,15 @@ body {
   text-align: left;
   /*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
   /*text-shadow:*/
-        /*-1px -1px 0px #000000,*/
-         /*0px -1px 0px #000000,*/
-         /*1px -1px 0px #000000,*/
-        /*-1px  0px 0px #000000,*/
-         /*1px  0px 0px #000000,*/
-        /*-1px  1px 0px #000000,*/
-         /*0px  1px 0px #000000,*/
-         /*1px  1px 0px #000000;*/
-  color: #000000;
+        /*-1px -1px 0px #555,*/
+         /*0px -1px 0px #555,*/
+         /*1px -1px 0px #555,*/
+        /*-1px  0px 0px #555,*/
+         /*1px  0px 0px #555,*/
+        /*-1px  1px 0px #555,*/
+         /*0px  1px 0px #555,*/
+         /*1px  1px 0px #555;*/
+  color: #555;
   background-image: url('graph.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -41,7 +41,7 @@ body {
 
 .tabs {
   list-style: none;
-  background-color: #D4EBF2;
+  background-color: #89CFF0;
 }
 
 .tab-link {
@@ -55,7 +55,7 @@ body {
 }
 
 .tab-link:hover {
-  background-color: #000000;
+  background-color: #555;
   color: #EDBC41;
 }
 

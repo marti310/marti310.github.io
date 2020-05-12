@@ -80,7 +80,7 @@ body {
 
 .pub-img > img {
   display: block;
-  width: 250px;
+  width: 450px;
   margin: 10px;
 }
 
@@ -118,29 +118,6 @@ body {
 
 .pub-divide {
   border: 2.5px solid #D4EBF2;
-}
-
-.project {
-  overflow: auto;
-}
-
-.proj-img > img {
-  display: block;
-  width: 920px;
-  margin: 20px;
-}
-
-.proj-text {
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.proj-text > h2 > a {
-  color: #000;
-}
-
-.proj-text > h2 > a:hover {
-  color: #666;
 }
 
 .text {

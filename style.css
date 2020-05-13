@@ -69,7 +69,7 @@ body {
 
 .main {
   overflow: auto;
-  background-color: rgba(80, 80, 80, 0.2);
+  background-color: #35495E;
   margin: 5px 0;
 }
 

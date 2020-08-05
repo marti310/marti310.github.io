@@ -11,59 +11,52 @@
   <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
   
   <style>
-  .pictures>h1 {
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
   text-align: center;
-  font-size: 50px;
-  word-break: break-all;
-  }
+}
 
-  .pictures>p {
-        text-align: center;
-    }
-    
-  
-    
-  .row {
-  margin: 8px -16px;
-  }
+* {
+  box-sizing: border-box;
+}
 
-  /* Add padding BETWEEN each column */
-  .row,
-  .row > .column {
-  padding: 8px;
-  }
-
-  /* Create four equal columns that floats next to each other */
-  .column {
+.responsive {
+  padding: 0 6px;
   float: left;
-  width: 40%;
-  }
+  width: 24.99999%;
+}
 
-  /* Clear floats after rows */ 
-  .row:after {
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
   content: "";
   display: table;
   clear: both;
-  }
-
-  /* Content */
-  .content {
-  background-color: white;
-  padding: 10px;
-  }
-
-  /* Responsive layout - makes a two column-layout instead of four columns */
-  @media screen and (max-width: 960px) {
-  .column {
-    width: 100%;
-    }
-  }
-
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 800px) {
-    .column {
-    width: 100%;
-     }
+}
 </style>
 </head>
 
@@ -85,69 +78,65 @@
       <div class="pictures">
       <h1>My Math Family</h1>
       <p>The following people have influenced my life during my career. I am thankful to have met all of them.</p>
-
-      <!-- Portfolio Gallery Grid -->
-    <div class="content">
-      <img src="./images/EOF.jpg" alt="EOF" style="width:100%">
-      <h3>Educational Opportunity Fund (EOF 2017)</h3>
-      <p>The summer prior to my first semester at Stockton University, I attended the EOF program in 2017.
-        This program gives low-income, underprivileged students the opportunity to succeed in college. 
-        During this summer academy, students get a head start by taking two classes designed to prepare them for their
-        first year of college. </p>
-     </div>
-
-    <div class="row">
-       <div class="column">
-          <div class="content">
-          <img src="./images/Mimi.jpg" alt="My best friend" style="width:100%">
-          <h3>My Best Friend</h3>
-          <p> I met Mimi during EOF 2017. She has supported me since we became friends.
-            I am thankful to have her in my life because she helps me grow and cheers me up whenever I am feeling down :)</p>
-          </div>
-       </div> 
-       <div class="column">
-          <div class="content">
-          <img src="./images/my_mejores_amigos.jpg" alt="My friends" width="450" height="400">
-          <h3>My Lifetime Friends</h3>
-          <p>Finding friends when you take part of a long journey is key.
-            I am thankful to have them in my life; they fill my life with joy. <br> <br>
-            In the picture: Tyler O'Grady (leftmost), Christina Triantafillou (second),
-            Nicole Manno (third), me (fourth), and Amin Fadel (rightmost) </p>
-       </div>
-    </div>
-  
-    <div class="column">
-    <div class="content">
-       <img src="./images/MSRI.jpg" alt="MSRI-UP 2019 group" width="400" height="350">
-       <h3> MSRI-UP 2019</h3>
-       <p>During the summer of 2019, I participated at the Mathematical Sciences Research Institute Undergraduate Program
-         <a href="https://www.msri.org/msri_ups/920"
-          target="_blank"> (MSRI-UP) </a> at Berkeley, California.</p>
-    </div>
-    </div>
-  
-    <div class="column">
-      <div class="content">
-        <img src="./images/Pamela.jpg" alt="My research advisor: Pamela" style="width:100%">
-        <h3>My Research Advisor and Mentor for Life</h3>
-        <p> Dr.<a href="https://www.pamelaeharris.com" target="_blank">
-              Pamela E. Harris</a> was the first Latina professor I met. She has inspired my math career.
-          We both speak Spanish and we share more in common. One of them is how our math career started;
-          we began in low-level math classes at college.</p>
-      </div>
-    </div>
-    <div class="column">
-      <div class="content">
-      <img src="./images/Rebecca.jpg" alt="Dr. Rebecca Garcia: my mentor" width="400" height="350">
-      <h3>Mentor from MSRI-UP</h3>
-        <p> I met Dr. Rebecca E. Garcia at the 2019 MSRI-UP summer program; she was the on-site director.
-          I thank her for all her advice and mentorship she has provided me.
-          This picture was taken at the 2019 SACNAS conference.</p>
-    </div>
+       
+        
+        <div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href=""./images/EOF.jpg"">
+      <img src=""./images/EOF.jpg"" alt="EOF" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
   </div>
-<!-- END GRID -->
 </div>
-      
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="./images/Mimi.jpg">
+      <img src="./images/Mimi.jpg" alt="Mimi" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="./images/my_mejores_amigos.jpg">
+      <img src="./images/my_mejores_amigos.jpg" alt="Mejores Amigos" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="./images/MSRI.jpg">
+      <img src="./images/MSRI.jpg" alt="MSRI" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="./images/Pamela.jpg">
+      <img src="./images/Pamela.jpg" alt="Pamela" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="./images/Rebecca.jpg">
+      <img src="./images/Rebecca.jpg" alt="Rebecca" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+
+
    <div class="content">
      <img src="./images/friends.jpg" alt="Some other friends" width="950" height="700">
      <h3>Friends</h3>
@@ -155,6 +144,8 @@
        We had a great time! <br> <br>
        In the picture: Tara Gomes (leftmost), me (second), Alex (third) and Eduardo Torres (rightmost). </p>
    </div>
+        
+        <div class="clearfix"></div>
       </div>
       </div>
     

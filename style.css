@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #1EB2A6;
+  background-color: #6ba4cf; 
   font-family: 'Poppins', sans-serif;
 }
 
@@ -69,7 +69,7 @@ body {
 
 .main {
   overflow: auto;
-  background-color: #F67575;
+  background-color: #cadded;
   margin: 5px 0;
 }
 

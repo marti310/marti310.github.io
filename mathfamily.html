@@ -11,153 +11,212 @@
   <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
   
   <style>
-div.gallery {
-  border: 1px solid #ccc;
-}
+    body {
+       font-family: Arial;
+       margin: 0;
+    }
 
-div.gallery:hover {
-  border: 1px solid #777;
-}
+    * {
+         box-sizing: border-box;
+      }
 
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
+     img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+     }
 
-div.desc {
-  padding: 15px;
-  text-align: center;
-}
+     /* Position the image container (needed to position the left and right arrows) */
+      .container {
+         position: relative;
+      }
 
-* {
-  box-sizing: border-box;
-}
+      /* Hide the images by default */
+      .mySlides {
+          display: none;
+        }
 
-.responsive {
-  padding: 0 6px;
-  float: left;
-  width: 24.99999%;
-}
+      /* Add a pointer when hovering over the thumbnail images */
+      .cursor {
+          cursor: pointer;
+         }
 
-@media only screen and (max-width: 700px) {
-  .responsive {
-    width: 49.99999%;
-    margin: 6px 0;
-  }
-}
+      /* Next & previous buttons */
+      .prev,
+      .next {
+          cursor: pointer;
+          position: absolute;
+          top: 40%;
+          width: auto;
+          padding: 16px;
+          margin-top: -50px;
+          color: black;
+          font-weight: bold;
+          font-size: 20px;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+          -webkit-user-select: none;
+        }
 
-@media only screen and (max-width: 500px) {
-  .responsive {
-    width: 100%;
-  }
-}
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+          }
 
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-</style>
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+          }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+            color: black;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+          }
+
+        /* Container for image text */
+        .caption-container {
+            text-align: center;
+            background-color: #222;
+            padding: 2px 16px;
+            color: white;
+          }
+
+          .row:after {
+            content: "";
+            display: table;
+            clear: both;
+          }
+
+          /* Six columns side by side */
+          .column {
+              float: left;
+              width: 16.66%;
+          }
+
+          /* Add a transparency effect for thumnbail images */
+          .demo {
+             opacity: 0.6;
+              }
+
+          .active,
+          .demo:hover {
+             opacity: 1;
+            }
+    </style>
+  
+  
 </head>
 
 <body>
   <div class="wrapper">
     <div class="header">
-      <h1>Lucy</h1>
-      <h1>Adriana</h1>
-      <h1>Martinez</h1>
-    </div>
+      <!--<h1>MTR</h1>
+      <h1>Landscaping</h1>
+      <h1>LLC</h1>-->
+    </div> 
     <ul class="tabs">
       <a class="tab-link" href="index.html">Home</a><!--
-      --><a class="tab-link" href="Research.html">Research</a><!--
-      --><a class="tab-link" href="lucymartinez_cv.pdf" target="_blank">CV</a><!--
-      --><a class="active tab-link" href="#">Math Family</a><!--
+      --><a class="active tab-link" href="#">Photo Gallery</a><!--
       --><a class="tab-link" href="contact.html">Contact</a>
     </ul>
     <div class="main">
-      <div class="pictures">
-      <h1>My Math Family</h1>
-      <p>The following people have influenced my life during my career. I am thankful to have met all of them.</p>
-       
-        <div class="content">
-     <img src="./images/EOF.jpg" alt="EOF" width="850" height="600">
-     <h3>Friends</h3>
-     <p> The summer prior to my first semester at Stockton University, I attended the EOF program in 2017.
+      <br>
+        <h1>My Math Family</h1>
+        <p style="text-align:center;"> The following people have influenced my life during my career. I am thankful to have met all of them.</p>  <br>
+      
+      <div class="container">
+          <div class="mySlides">
+            <div class="numbertext">1 / 7</div>
+            <img src="./images/EOF.jpg"  style="width:100%">
+          </div>
+        
+          <div class="mySlides">
+            <div class="numbertext">2 / 7</div>
+            <img src="./images/Mimi.jpg"  style="width:50%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">3 / 7</div>
+            <img src="./images/my_mejores_amigos.jpg"  style="width:80%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">4 / 7</div>
+            <img src="./images/MSRI.jpg" style="width:80%">
+          </div>
+    
+          <div class="mySlides">
+            <div class="numbertext">5 / 7</div>
+            <img src="./images/Pamela.jpg" style="width:50%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">6 / 7</div>
+            <img src="./images/Rebecca.jpg" style="width:80%">
+          </div>
+    
+          <div class="mySlides">
+            <div class="numbertext">7 / 7</div>
+            <img src="./images/friends.jpg" style="width:100%">
+          </div>
+        
+          
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    
+    <div class="column">
+      <img class="demo cursor" src="./images/EOF.jpg" style="width:100%" onclick="currentSlide(1)" alt="The summer prior to my first semester at Stockton University, I attended the EOF program in 2017.
         This program gives low-income, underprivileged students the opportunity to succeed in college. 
         During this summer academy, students get a head start by taking two classes designed to prepare them for their
-        first year of college. </p>
-   </div>
-        
-
-
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="./images/Mimi.jpg">
-      <img src="./images/Mimi.jpg" alt="Mimi" width="700" height="500">
-    </a>
-    <div class="desc">I met Mimi during EOF 2017. She has supported me since we became friends.
-            I am thankful to have her in my life because she helps me grow and cheers me up whenever I am feeling down :) </div>
-  </div>
-</div>
-
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="./images/my_mejores_amigos.jpg">
-      <img src="./images/my_mejores_amigos.jpg" alt="Mejores Amigos" width="800" height="500">
-    </a>
-    <div class="desc">Finding friends when you take part of a long journey is key.
+        first year of college.">
+    </div>
+    
+    <div class="column">
+      <img class="demo cursor" src="./images/Mimi.jpg" style="width:50%" onclick="currentSlide(2)" alt="I met Mimi during EOF 2017. She has supported me since we became friends.
+            I am thankful to have her in my life because she helps me grow and cheers me up whenever I am feeling down :)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./images/my_mejores_amigos.jpg" style="width:80%" onclick="currentSlide(3)" alt="Finding friends when you take part of a long journey is key.
             I am thankful to have them in my life; they fill my life with joy. <br> <br>
             In the picture: Tyler O'Grady (leftmost), Christina Triantafillou (second),
-            Nicole Manno (third), me (fourth), and Amin Fadel (rightmost)</div>
-  </div>
-</div>
-
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="./images/MSRI.jpg">
-      <img src="./images/MSRI.jpg" alt="MSRI" width="800" height="500">
-    </a>
-    <div class="desc">During the summer of 2019, I participated at the Mathematical Sciences Research Institute Undergraduate Program
+            Nicole Manno (third), me (fourth), and Amin Fadel (rightmost)" >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./images/MSRI.jpg" style="width:80%" onclick="currentSlide(4)" alt="During the summer of 2019, I participated at the Mathematical Sciences Research Institute Undergraduate Program
          <a href="https://www.msri.org/msri_ups/920"
-          target="_blank"> (MSRI-UP) </a> at Berkeley, California.</div>
-  </div>
-</div>
-
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="./images/Pamela.jpg">
-      <img src="./images/Pamela.jpg" alt="Pamela" width="700" height="500">
-    </a>
-    <div class="desc">Dr.<a href="https://www.pamelaeharris.com" target="_blank">
-              Pamela E. Harris</a> was the first Latina professor I met. She has inspired my math career.
-          We both speak Spanish and we share more in common.</div>
-  </div>
-</div>
-
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="./images/Rebecca.jpg">
-      <img src="./images/Rebecca.jpg" alt="Rebecca" width="700" height="500">
-    </a>
-    <div class="desc">I met Dr. Rebecca E. Garcia at the 2019 MSRI-UP summer program; she was the on-site director.
+          target="_blank"> (MSRI-UP) </a> at Berkeley, California.">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./images/Pamela.jpg" style="width:50%" onclick="currentSlide(5)" alt="./images/Pamela.jpg">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./images/Rebecca.jpg" style="width:50%" onclick="currentSlide(6)" alt="I met Dr. Rebecca E. Garcia at the 2019 MSRI-UP summer program; she was the on-site director.
           I thank her for all her advice and mentorship she has provided me.
-          This picture was taken at the 2019 SACNAS conference.</div>
+          This picture was taken at the 2019 SACNAS conference." >
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="./images/friends.jpg" style="width:100%" onclick="currentSlide(7)" alt="This picture was taken at Boulder, Colorado; first day of the Joint Math Meetings (JMM) conference. <br>
+       We had a great time! <br> <br>
+       In the picture: Tara Gomes (leftmost), me (second), Alex (third) and Eduardo Torres (rightmost)." >
+    </div>                                                                                                              
+                                                                                                                    
   </div>
+</div> 
 </div>
 
-
-
-   <div class="content">
-     <img src="./images/friends.jpg" alt="Some other friends" width="850" height="600">
-     <h3>Friends</h3>
-     <p> This picture was taken at Boulder, Colorado; first day of the Joint Math Meetings (JMM) conference. <br>
-       We had a great time! <br> <br>
-       In the picture: Tara Gomes (leftmost), me (second), Alex (third) and Eduardo Torres (rightmost). </p>
-   </div>
-        
-        <div class="clearfix"></div>
-      </div>
-      </div>
     
     <div class="footer">
       <a href="https://linkedin.com/in/lucy-martinez-068570187" target="_blank"><!--
@@ -166,5 +225,36 @@ div.desc {
       <p>Email: lucymartinez988@gmail.com</p>
     </div>
   </div>
+  
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
 </body>
 </html>

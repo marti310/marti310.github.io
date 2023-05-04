@@ -195,6 +195,15 @@ body {
   width: 440px;
 }
 
+ul.list {
+  display: block;
+  width: 500px;
+  list-style-type: disc;
+  margin-left: 50px;
+  margin-right:50px;
+  margin-top: 10px;
+}
+
 .contact {
   margin: 10px 0;
 }

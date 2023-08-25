@@ -204,7 +204,7 @@ ul.list {
 
 ul.list1{
   list-style-type: none;
-  margin: 10px;
+  margin: 10px auto;
   margin-right: 20px;
   padding: 0;
 }

@@ -204,13 +204,13 @@ ul.list {
 
 ul.list1{
   list-style-type: none;
-  margin: 30px auto;
+  margin: 10px auto;
   padding: 0;
 }
 
 ul.list2{
   list-style-type: disc;
-  margin-left: 30px;
+  margin-left: 20px;
 }
 
 .contact {

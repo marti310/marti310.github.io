@@ -217,6 +217,7 @@ ul.list3{
   margin: 20px;
   font-size: 0.9em;
   list-style-type: disc;
+  padding: 0;
 }
 
 .contact {

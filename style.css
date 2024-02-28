@@ -213,6 +213,13 @@ ul.list2{
   margin-left: 20px;
 }
 
+ul.list3{
+  float: right;
+  margin: 20px;
+  font-size: 0.9em;
+  list-style-type: disc;
+}
+
 .contact {
   margin: 10px 0;
 }

@@ -214,10 +214,10 @@ ul.list2{
 }
 
 ul.list3{
-  margin: 30px;
+  margin: 34px;
   font-size: 0.9em;
   list-style-type: disc;
-  margin-top: 0;
+  margin-top: -15px;
 }
 
 .contact {

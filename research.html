@@ -138,5 +138,19 @@
       <p>Email: lucy[dot]martinez[at]rutgers[dot]edu</p>
     </div>
   </div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    let lists = document.querySelectorAll("ol[reversed]");
+    let totalItems = 0;
+
+    for (let i = lists.length - 1; i >= 0; i--) { // Loop in reverse order
+        let items = lists[i].querySelectorAll("li").length;
+        totalItems += items;
+        lists[i].setAttribute("start", totalItems);
+    }
+});
+</script>
+	
 </body>
 </html>

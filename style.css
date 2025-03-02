@@ -233,8 +233,7 @@ ul.list3{
 }
 
 .footer {
-  /*display: flex;*/
-  height: 70px;
+  height: 40px;
   background-color: #89CFF0;
 }
 
@@ -249,11 +248,5 @@ ul.list3{
   margin: 5px 10px;
   color: #000;
   font-size: 20px;
-}
-
-.visitor-counter {
-  display: flex;
-  align-items: center;
-  gap: 10px; /* Adds spacing between the counter and text */
 }
 

@@ -233,7 +233,8 @@ ul.list3{
 }
 
 .footer {
-  height: 40px;
+  height: 60px;
+  gap: 20px;
   background-color: #89CFF0;
 }
 

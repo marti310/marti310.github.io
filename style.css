@@ -251,8 +251,6 @@ ul.list3{
 }
 
 .visitor-counter {
-  transform: scale(0.8);  /* Shrinks the counter */
-  transform-origin: center; /* Keeps it centered */
-  width: 100px; /* Adjust width if needed */
-  height: auto; /* Keeps aspect ratio */
+  display: inline-block;
+  vertical-align: middle;
 }

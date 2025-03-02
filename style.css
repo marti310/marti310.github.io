@@ -233,8 +233,8 @@ ul.list3{
 }
 
 .footer {
-  height: 60px;
-  gap: 20px;
+  height: 50px;
+  display: flex;
   background-color: #89CFF0;
 }
 
@@ -251,8 +251,9 @@ ul.list3{
   font-size: 20px;
 }
 
-.footer>a {
-  display: inline-block;
-  margin: 5px 10px;
+.visitor-counter {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Adds spacing between the counter and text */
 }
 

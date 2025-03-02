@@ -233,8 +233,8 @@ ul.list3{
 }
 
 .footer {
-  display: flex;
-  height: 60px;
+  /*display: flex;*/
+  height: 70px;
   background-color: #89CFF0;
 }
 
@@ -244,10 +244,9 @@ ul.list3{
 }
 
 .footer > p {
-  /* float: right; */
-  margin-left: auto;
+  float: right;
   display: inline-block;
-  /* margin: 5px 10px; */
+  margin: 5px 10px;
   color: #000;
   font-size: 20px;
 }

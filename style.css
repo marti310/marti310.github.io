@@ -251,7 +251,8 @@ ul.list3{
   font-size: 20px;
 }
 
-.visitor-counter {
+.footer>a {
   display: inline-block;
-  vertical-align: middle;
+  margin: 5px 10px;
 }
+

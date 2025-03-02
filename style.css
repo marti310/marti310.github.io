@@ -237,18 +237,6 @@ ul.list3{
   background-color: #89CFF0;
 }
 
-.footer-content {
-  display: flex;
-}
-
-.footer-content a {
-  margin-right: 10px; /* Space between LinkedIn icon and visitor counter */
-}
-
-.footer-content script {
-  margin-left: 10px; /* Adjust the space between the visitor counter and link */
-}
-
 
 .fab {
   color: #555;

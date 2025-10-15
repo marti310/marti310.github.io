@@ -144,7 +144,7 @@ body {
 
 .pub-text > h2 {
   margin: 20px;
-  margin-top: 10px; 
+  /* margin-top: 10px;  */
   /* margin top was set to 30 */
   font-size: 1em;
 }
@@ -251,5 +251,6 @@ ul.list3{
   color: #000;
   font-size: 20px;
 }
+
 
 

@@ -239,7 +239,7 @@ ul.list3{
 }
 
 
-.fab {
+.fab, .ai {
   color: #555;
   margin: 5px 10px;
 }
@@ -251,6 +251,7 @@ ul.list3{
   color: #000;
   font-size: 20px;
 }
+
 
 
 

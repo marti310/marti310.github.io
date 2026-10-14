@@ -34,8 +34,25 @@
       </div>
     </ul>
     <div class="main">
+	<br>
+     <p style="margin-left:30px;"> Below is a list of the classes I have served as a teaching assistant (TA) or instructor of record. </p>   
+     <br>
 
+	<h3 style="margin-left:50px;">Rutgers University</h3>
+	 <br>
+     <ul class="list">
+		 <li> Combinatorics and Probability I, Young Scholars Program in Discrete Mathematics, Summer 2026 (instructor of record)  </li>
+		 <li> Calculus II for the Mathematical and Physical Sciences, Fall 2025 (TA)  </li>
+		 <li> Calculus I for the Mathematical and Physical Sciences, Fall 2024 (TA)  </li>
+	 </ul>
 
+	 <br>
+
+	<h3 style="margin-left:50px;">Stockton University</h3>
+	<ul class="list">
+		 <li> Quantitative Reasoning; Spring 2018, Fall 2018, Spring 2019, Fall 2019, Spring 2020, Fall 2020, Spring 2021 (TA)  </li>
+		 <li> Educational Opportunity Fund, Summer 2018 (TA)  </li>
+	 </ul>
 
     </div>
     <div class="footer">
